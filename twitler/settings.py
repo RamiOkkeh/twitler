@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 import os
 from pathlib import Path
 
+# atlas admin ovVlzXVRMwXepGH8
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -76,10 +78,20 @@ WSGI_APPLICATION = 'twitler.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+        'default': {
+            'ENGINE': 'djongo',
+            "CLIENT": {
+                "name": "tweets",
+                "host": "mongodb+srv://admin:ovVlzXVRMwXepGH8@main.3wqtd.mongodb.net/tweets?retryWrites=true&w=majority",
+                "username": "admin",
+                "password": "ovVlzXVRMwXepGH8",
+                "authMechanism": "SCRAM-SHA-1",
+            }, 
+            # 'NAME': 'tweets',
+            # 'HOST': 'mongodb+srv://admin:ovVlzXVRMwXepGH8@main.3wqtd.mongodb.net/tweets?retryWrites=true&w=majority',
+            # 'USER': 'admin',
+            # 'PASSWORD': 'ovVlzXVRMwXepGH8',
+        }
 }
 
 
