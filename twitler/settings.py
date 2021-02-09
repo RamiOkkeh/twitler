@@ -87,10 +87,6 @@ DATABASES = {
                 "password": "ovVlzXVRMwXepGH8",
                 "authMechanism": "SCRAM-SHA-1",
             }, 
-            # 'NAME': 'tweets',
-            # 'HOST': 'mongodb+srv://admin:ovVlzXVRMwXepGH8@main.3wqtd.mongodb.net/tweets?retryWrites=true&w=majority',
-            # 'USER': 'admin',
-            # 'PASSWORD': 'ovVlzXVRMwXepGH8',
         }
 }
 
